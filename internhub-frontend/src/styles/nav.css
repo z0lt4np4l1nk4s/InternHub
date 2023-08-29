@@ -1,0 +1,112 @@
+.sidebar {
+  background-color: #486b73;
+  height: 100%;
+  width: 80px;
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar:hover {
+  width: 250px;
+  background-color: #486b73;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #486b73;
+}
+
+.nav-links:hover{
+  color: rgb(167, 177, 179);
+}
+
+.nav-item {
+
+  padding: 10px;
+  background-color: #486b73;
+  margin: 0; /* Remove any margin */
+}
+
+.nav-item:hover {
+  background-color: #486b73;
+  color: rgb(167, 177, 179);
+}
+
+.link-style {
+  display: block;
+  color: white;
+
+  text-align: left;
+  text-decoration: none;
+  padding: 14px 16px;
+  white-space: nowrap;
+  background-color: #486b73;
+  margin: 0;
+  padding: 0;
+}
+
+.link-style:hover{
+  color: rgb(167, 177, 179);
+}
+.link-style a{
+  background-color: #486b73;
+}
+
+.icon {
+  float: left;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+  background-color: #486b73;
+}
+
+
+.sidebar:hover .text {
+  display: inline-block;
+  color: #a8bbbf;
+}
+
+.nav-text{
+  background-color: #486b73;
+  color: white;
+  display: none;
+
+}
+
+.nav-text:hover{
+  color: rgb(167, 177, 179);
+}
+
+.fontawesome{
+  background-color: #486b73;
+  float: left;
+  padding:5px;
+  margin-right:10px;
+}
+
+.nav-item:hover .nav-text {
+  display: inline-block;
+  color: rgb(167, 177, 179);
+}
+.nav-content{
+  background-color: #486b73;
+}
+.sidebar:hover .nav-text{
+  display: inline-block;
+  color: white;
+  
+}
+
+.cancel-button{
+  margin-left:5px;
+}

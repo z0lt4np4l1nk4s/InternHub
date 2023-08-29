@@ -1,0 +1,214 @@
+﻿create table public."County"(
+    "Id" uuid primary key,
+    "Name" varchar NOT NULL,
+    "DateCreated" TIMESTAMP NOT NULL, 
+    "DateUpdated" TIMESTAMP NOT NULL,
+    "CreatedByUserId" varchar(128) NOT NULL,
+    "UpdatedByUserId" varchar(128) NOT NULL,
+    "IsActive" bool NOT NULL DEFAULT true
+);
+
+-- dbo."AspNetUsers" definition
+
+-- Drop table
+
+-- DROP TABLE dbo."AspNetUsers";
+
+CREATE TABLE dbo."AspNetUsers" (
+	"Id" varchar(128) NOT NULL,
+	"FirstName" text NULL,
+	"LastName" text NULL,
+	"Address" text NULL,
+	"Description" text NULL,
+	"IsActive" bool NOT NULL,
+	"DateCreated" timestamp NOT NULL,
+	"DateUpdated" timestamp NOT NULL,
+	"CountyId" uuid NOT NULL,
+	"Email" varchar(256) NULL,
+	"EmailConfirmed" bool NOT NULL,
+	"PasswordHash" text NULL,
+	"SecurityStamp" text NULL,
+	"PhoneNumber" text NULL,
+	"PhoneNumberConfirmed" bool NOT NULL,
+	"TwoFactorEnabled" bool NOT NULL,
+	"LockoutEndDateUtc" timestamp NULL,
+	"LockoutEnabled" bool NOT NULL,
+	"AccessFailedCount" int4 NOT NULL,
+	"UserName" varchar(256) NOT NULL,
+	"StudyAreaId" uuid NULL,
+	"Discriminator" varchar(128) NOT NULL,
+	CONSTRAINT "PK_dbo.AspNetUsers" PRIMARY KEY ("Id"),
+	CONSTRAINT "FK_AspNetUsers_County_CountyId" foreign key("CountyId") references public."County"("Id")
+);
+CREATE UNIQUE INDEX "AspNetUsers_UserNameIndex" ON dbo."AspNetUsers" USING btree ("UserName");
+
+
+-- dbo."AspNetRoles" definition
+
+-- Drop table
+
+-- DROP TABLE dbo."AspNetRoles";
+
+CREATE TABLE dbo."AspNetRoles" (
+	"Id" varchar(128) NOT NULL,
+	"Name" varchar(256) NOT NULL,
+	"Discriminator" varchar(128) NOT NULL,
+	CONSTRAINT "PK_dbo.AspNetRoles" PRIMARY KEY ("Id")
+);
+CREATE UNIQUE INDEX "AspNetRoles_RoleNameIndex" ON dbo."AspNetRoles" USING btree ("Name");
+
+-- dbo."AspNetUserClaims" definition
+
+-- Drop table
+
+-- DROP TABLE dbo."AspNetUserClaims";
+
+CREATE TABLE dbo."AspNetUserClaims" (
+	"Id" serial4 NOT NULL,
+	"UserId" varchar(128) NOT NULL,
+	"ClaimType" text NULL,
+	"ClaimValue" text NULL,
+	CONSTRAINT "PK_dbo.AspNetUserClaims" PRIMARY KEY ("Id")
+);
+CREATE INDEX "AspNetUserClaims_IX_UserId" ON dbo."AspNetUserClaims" USING btree ("UserId");
+
+
+-- dbo."AspNetUserClaims" foreign keys
+
+ALTER TABLE dbo."AspNetUserClaims" ADD CONSTRAINT "FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES dbo."AspNetUsers"("Id") ON DELETE CASCADE;
+
+-- dbo."AspNetUserLogins" definition
+
+-- Drop table
+
+-- DROP TABLE dbo."AspNetUserLogins";
+
+CREATE TABLE dbo."AspNetUserLogins" (
+	"LoginProvider" varchar(128) NOT NULL,
+	"ProviderKey" varchar(128) NOT NULL,
+	"UserId" varchar(128) NOT NULL,
+	CONSTRAINT "PK_dbo.AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey", "UserId")
+);
+CREATE INDEX "AspNetUserLogins_IX_UserId" ON dbo."AspNetUserLogins" USING btree ("UserId");
+
+-- dbo."AspNetUserLogins" foreign keys
+
+ALTER TABLE dbo."AspNetUserLogins" ADD CONSTRAINT "FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES dbo."AspNetUsers"("Id") ON DELETE CASCADE;
+
+-- dbo."AspNetUserRoles" definition
+
+-- Drop table
+
+-- DROP TABLE dbo."AspNetUserRoles";
+
+CREATE TABLE dbo."AspNetUserRoles" (
+	"UserId" varchar(128) NOT NULL,
+	"RoleId" varchar(128) NOT NULL,
+	CONSTRAINT "PK_dbo.AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId")
+);
+CREATE INDEX "AspNetUserRoles_IX_RoleId" ON dbo."AspNetUserRoles" USING btree ("RoleId");
+CREATE INDEX "AspNetUserRoles_IX_UserId" ON dbo."AspNetUserRoles" USING btree ("UserId");
+
+
+-- dbo."AspNetUserRoles" foreign keys
+
+ALTER TABLE dbo."AspNetUserRoles" ADD CONSTRAINT "FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES dbo."AspNetRoles"("Id") ON DELETE CASCADE;
+ALTER TABLE dbo."AspNetUserRoles" ADD CONSTRAINT "FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES dbo."AspNetUsers"("Id") ON DELETE CASCADE;
+
+-- dbo."__MigrationHistory" definition
+
+-- Drop table
+
+-- DROP TABLE dbo."__MigrationHistory";
+
+CREATE TABLE dbo."__MigrationHistory" (
+	"MigrationId" varchar(150) NOT NULL,
+	"ContextKey" varchar(300) NOT NULL,
+	"Model" bytea NOT NULL,
+	"ProductVersion" varchar(32) NOT NULL,
+	CONSTRAINT "PK_dbo.__MigrationHistory" PRIMARY KEY ("MigrationId", "ContextKey")
+);
+
+create table public."State"(
+	"Id" uuid primary key,
+	"Name" text not null,
+	"DateCreated" TIMESTAMP not null,
+	"DateUpdated" TIMESTAMP not null,
+	"CreatedByUserId" varchar(128) not null,
+	"UpdatedByUserId" varchar(128) not null,
+	"IsActive" bool default true
+);
+
+create table public."StudyArea" (
+    "Id" uuid primary key,
+    "Name" varchar NOT NULL,
+    "DateCreated" TIMESTAMP NOT NULL, 
+    "DateUpdated" TIMESTAMP NOT NULL,
+    "CreatedByUserId" varchar(128) NOT NULL,
+    "UpdatedByUserId" varchar(128) NOT NULL,
+    "IsActive" bool NOT NULL DEFAULT true
+);
+
+create table public."Student"(
+	"Id" varchar(128) primary key,
+	constraint "FK_Student_User_Id" foreign key ("Id") references dbo."AspNetUsers"("Id"),
+	"StudyAreaId" uuid not null,
+	constraint "FK_Student_StudyArea_Id" foreign key("StudyAreaId") references public."StudyArea"("Id")
+);
+
+create table public."Company"(
+	"Id" varchar(128) primary key,
+	"Name" VARCHAR not null,
+	"Website" VARCHAR not null,
+	"IsAccepted" bool,
+	
+	CONSTRAINT "FK_Company_User_Id" FOREIGN KEY ("Id") references dbo."AspNetUsers"("Id")
+);
+
+create table public."Internship"(
+	"Id" uuid primary key,
+	"StudyAreaId" uuid not null,
+	"CompanyId" varchar(128) not null,
+	"Name" VARCHAR not null,
+	"Description" VARCHAR not null,
+	"Address" VARCHAR not null,
+	"StartDate" TIMESTAMP not null,
+	"EndDate" TIMESTAMP not null,
+	"CreatedByUserId" varchar(128) not null,
+	"UpdatedByUserId" varchar(128) not null,
+	"DateCreated" TIMESTAMP not null,
+	"DateUpdated" TIMESTAMP not null,
+	"IsActive" bool not null default true,
+	
+	CONSTRAINT "FK_Internship_StudyArea_StudyAreaId" FOREIGN KEY ("StudyAreaId") references public."StudyArea"("Id"),
+	CONSTRAINT "FK_Internship_Company_CompanyId" FOREIGN KEY ("CompanyId") references public."Company"("Id")
+);
+
+create table public."Notification" (
+	"Id" uuid primary key,
+	"Title" VARCHAR not null,
+	"Body" VARCHAR not null,
+	"ReceiverUserId" varchar(128) not null,
+	constraint "FK_Notification_User_ReceiverUserId" foreign key ("ReceiverUserId") references dbo."AspNetUsers"("Id"),
+	"DateCreated" TIMESTAMP not null,
+	"DateUpdated" TIMESTAMP not null,
+	"CreatedByUserId" varchar(128) not null,
+	"UpdatedByUserId" varchar(128) not null,
+	"IsActive" bool not null default true
+);
+
+create table public."InternshipApplication" (
+    "Id" uuid primary key,
+    "StateId" uuid NOT NULL,
+    "StudentId" varchar(128) NOT NULL,
+    "InternshipId" uuid NOT NULL,
+    "Message" text NOT NULL,
+    "DateCreated" TIMESTAMP NOT NULL, 
+    "DateUpdated" TIMESTAMP NOT NULL,
+    "CreatedByUserId" varchar(128) NOT NULL,
+    "UpdatedByUserId" varchar(128) NOT NULL,
+    "IsActive" bool not null DEFAULT true,
+    CONSTRAINT "FK_InternshipApplication_State_StateId" FOREIGN KEY ("StateId") REFERENCES public."State"("Id"),
+    CONSTRAINT "FK_InternshipApplication_Student_StudentId" FOREIGN KEY ("StudentId") REFERENCES public."Student"("Id"),
+    CONSTRAINT "FK_InternshipApplication_Internship_InternshipId" FOREIGN KEY ("InternshipId") REFERENCES public."Internship"("Id")
+);

@@ -1,0 +1,103 @@
+﻿INSERT INTO public."County" ("Id", "Name", "DateCreated", "DateUpdated", "CreatedByUserId", "UpdatedByUserId", "IsActive")
+VALUES
+    ('dcf8f823-e739-4c32-9668-bbed19a8335f', 'Bjelovarsko-Bilogorska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('2f4a6b78-302c-4c0a-abd7-ed399b378ff6', 'Brodsko-Posavska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('1d40f327-a6ad-478d-b13a-e96a21f86082', 'Dubrovačko-Neretvanska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('df4d6960-b0ca-48b6-b690-a2a25adab5d0', 'Istarska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('1fef1f7e-b916-4e6a-81fd-03d306ffdf02', 'Karlovacka', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('5738e483-42f0-4b31-9bca-cf993ba4db54', 'Koprivničko-Križevačka', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('2094b05e-91b0-4343-85de-86b253689c42', 'Krapinsko-Zagorska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('40032647-bffc-4f19-805e-bc4a912f56b5', 'Ličko-Senjska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('30dcecf7-2202-43e0-aafe-580c200466ad', 'Međimurska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('517bf28e-8064-4731-b9b9-099eb8d39f2f', 'Osječko-Baranjska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('e9f21cae-ccc3-4ae0-8cbb-f41bae9cffaf', 'Požeško-Slavonska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('5405aa56-9ea5-4c8d-81c3-04c218f0efaf', 'Primorsko-Goranska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('fa2db7fe-519c-4a33-9254-492513e073fd', 'Sisačko-Moslavačka', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('0f15336f-6025-4448-82b1-3703970b3ebc', 'Splitsko-Dalmatinska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('37d2ebb7-f0e1-40d3-a560-87dae16f1805', 'Šibensko-Kninska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('251ec21f-257a-429b-862c-9f60bf6b49f1', 'Varaždinska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('9bbde208-4241-427b-b27a-b617140de2ef', 'Virovitičko-Podravska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('28a6e041-5316-4567-a4e1-2ac56d043f78', 'Vukovarsko-Srijemska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('931b77ef-b011-4402-96d0-ddc613e66181', 'Zadarska', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('afce55f4-177a-4869-8736-9450aa91d163', 'Zagrebačka', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('1eb58f2e-7966-4171-90a6-8912558325df', 'Grad Zagreb', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true);
+
+INSERT INTO public."State" ("Id", "Name", "DateCreated", "DateUpdated", "CreatedByUserId", "UpdatedByUserId", "IsActive")
+VALUES
+    ('45ba9671-60e0-4368-b6f7-aa094bcff23e', 'Accepted', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('80879fa0-c082-49ff-8722-f45f4017e834', 'Processing', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('d9355afe-8866-47d4-a636-0914201cb139', 'Declined', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true);
+
+INSERT INTO public."StudyArea" ("Id", "Name", "DateCreated", "DateUpdated", "CreatedByUserId", "UpdatedByUserId", "IsActive")
+VALUES
+    ('147072b3-ea6d-478d-b15c-4a50fcc67ad4', 'Mathematics', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('97edb311-549c-483e-83fd-6fed5ce54f0c', 'Physics', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('68f92eb1-2d60-4ebf-9eab-c8b7670d7fdc', 'Biology', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('7501e58b-6ef1-45ed-9e48-b6e54b4c4f8d', 'Chemistry', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('26d88e7d-fef4-4031-835d-701adfe968d3', 'Computer Science', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('612d2af1-6433-443a-85a7-3f013d18006b', 'Economics', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('a64f9a74-5792-4672-97eb-e388ced412cf', 'Mathematics and Computer Science', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('81aae51e-7522-4e50-b921-a822856b3fe7', 'History', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('d641121f-e234-4638-a32c-1cf77c9f9371', 'Psychology', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true),
+    ('f384803d-f729-4bb2-b285-35b6124652d2', 'Engineering', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true);
+
+
+INSERT INTO dbo."AspNetRoles" ("Id", "Name", "Discriminator")
+VALUES
+    ('0eea48f7-a781-428d-997c-97734b9a1321', 'Admin', 'Role'),
+    ('cfabc5fe-99c2-4449-9f3b-b6c27694e22c', 'Student', 'Role'),
+    ('3c622019-b413-4363-ba44-9fc67c3d35a4', 'Company', 'Role'),
+    ('b4f33ce1-1fcf-4be6-8bed-fc9c77a59594', 'User', 'Role');
+
+INSERT INTO dbo."AspNetUsers" ("Id", "FirstName", "LastName", "Address", "Description", "CountyId", "IsActive", "DateCreated", "DateUpdated", "Email", "EmailConfirmed", "PasswordHash", "SecurityStamp", "PhoneNumber", "PhoneNumberConfirmed", "TwoFactorEnabled", "LockoutEndDateUtc", "LockoutEnabled", "AccessFailedCount", "UserName", "Discriminator") 
+VALUES 
+    ('0c2ba6ff-9145-43cf-ac48-ccf7effea536', 'Admin', 'Admin', 'IT Park 1', 'I am the admin', '517bf28e-8064-4731-b9b9-099eb8d39f2f', true, NOW(), NOW(), 'admin@mono.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_1', '', false, false, null, false, 0, 'admin@mono.com', 'User'),
+    ('a9c14b9f-7b69-45ff-9db8-f61b24a94aec', 'John', 'Doe', '123 Main Street', 'Description 1', '517bf28e-8064-4731-b9b9-099eb8d39f2f', true, NOW(), NOW(), 'john@example.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_1', '', false, false, null, false, 0, 'john@example.com', 'User'),
+    ('61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', 'Jane', 'Smith', '456 Elm Avenue', 'Description 2', '1eb58f2e-7966-4171-90a6-8912558325df', true, NOW(), NOW(), 'jane@example.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_2', '', false, false, null, false, 0, 'jane@example.com', 'User'),
+    ('0a206bed-d95f-49c6-82e5-e3ffa7f48ec0', 'Michael', 'Johnson', '789 Oak Road', 'Description 3', 'e9f21cae-ccc3-4ae0-8cbb-f41bae9cffaf', true, NOW(), NOW(), 'michael@example.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_3', '', false, false, null, false, 0, 'michael@example.com', 'User'),
+    ('a0434668-e3b7-4326-b57b-9b50bd5cea1d', 'Emily', 'Williams', '101 Pine Street', 'Description 4', '517bf28e-8064-4731-b9b9-099eb8d39f2f', true, NOW(), NOW(), 'emily@example.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_4', '', false, false, null, false, 0, 'emily@example.com', 'User'),
+    ('66dd48ab-afc1-4260-a7f2-527f0b5bd384', 'James', 'Brown', '222 Maple Avenue', 'Description 5', 'e9f21cae-ccc3-4ae0-8cbb-f41bae9cffaf', true, NOW(), NOW(), 'james@example.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_5', '', false, false, null, false, 0, 'james@example.com', 'User'),
+    ('6699302f-1668-4387-99a9-2f92f9d3ed08', 'Olivia', 'Davis', '333 Cedar Lane', 'Description 6', '1eb58f2e-7966-4171-90a6-8912558325df', true, NOW(), NOW(), 'olivia@example.com', false, 'AJs9umNJl5rX2NlKUHY30aeAZyx4TExgfYzv5t7yoVjjmXp7ALqFMEiJ0wjTQFELdA==', 'security_stamp_6', '', false, false, null, false, 0, 'olivia@example.com', 'User');
+
+INSERT INTO dbo."AspNetUserRoles"
+VALUES
+    ('0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0eea48f7-a781-428d-997c-97734b9a1321'),
+    ('a9c14b9f-7b69-45ff-9db8-f61b24a94aec', '3c622019-b413-4363-ba44-9fc67c3d35a4'),
+    ('61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', 'cfabc5fe-99c2-4449-9f3b-b6c27694e22c'),
+    ('0a206bed-d95f-49c6-82e5-e3ffa7f48ec0', 'b4f33ce1-1fcf-4be6-8bed-fc9c77a59594'),
+    ('a0434668-e3b7-4326-b57b-9b50bd5cea1d', 'cfabc5fe-99c2-4449-9f3b-b6c27694e22c'),
+    ('66dd48ab-afc1-4260-a7f2-527f0b5bd384', 'b4f33ce1-1fcf-4be6-8bed-fc9c77a59594'),
+    ('6699302f-1668-4387-99a9-2f92f9d3ed08', 'cfabc5fe-99c2-4449-9f3b-b6c27694e22c');
+
+INSERT INTO public."Company" ("Id", "Name", "Website", "IsAccepted")
+VALUES
+    ('a9c14b9f-7b69-45ff-9db8-f61b24a94aec', 'Mono', 'https://mono.software/', true),
+    ('66dd48ab-afc1-4260-a7f2-527f0b5bd384', 'Barrage', 'https://www.barrage.net/', false),
+    ('0a206bed-d95f-49c6-82e5-e3ffa7f48ec0', 'BE-terna', 'https://www.be-terna.com/', false);
+
+INSERT INTO public."Student" ("Id", "StudyAreaId") 
+VALUES 
+    ('61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', 'f384803d-f729-4bb2-b285-35b6124652d2'),
+    ('a0434668-e3b7-4326-b57b-9b50bd5cea1d', 'a64f9a74-5792-4672-97eb-e388ced412cf'),
+    ('6699302f-1668-4387-99a9-2f92f9d3ed08', '97edb311-549c-483e-83fd-6fed5ce54f0c');
+
+INSERT INTO public."Notification" ("Id", "Title", "Body", "ReceiverUserId", "DateCreated", "DateUpdated", "CreatedByUserId", "UpdatedByUserId", "IsActive")
+VALUES
+    ('4aaa7528-dc01-4944-b4ac-de2022934a34', 'Test', 'Body Test', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', NOW(), NOW(), '0c2ba6ff-9145-43cf-ac48-ccf7effea536', '0c2ba6ff-9145-43cf-ac48-ccf7effea536', true);
+
+INSERT INTO public."Internship" ("Id", "StudyAreaId", "CompanyId", "Name", "Description", "Address", "StartDate", "EndDate", "CreatedByUserId", "UpdatedByUserId", "DateCreated", "DateUpdated", "IsActive")
+VALUES
+    ('1903ccfa-8e19-4d8a-be2c-c16925cd032c', '147072b3-ea6d-478d-b15c-4a50fcc67ad4', 'a9c14b9f-7b69-45ff-9db8-f61b24a94aec', 'Internship 1', 'Description 1', '123 Main Street', NOW(), NOW(), 'a9c14b9f-7b69-45ff-9db8-f61b24a94aec', 'a9c14b9f-7b69-45ff-9db8-f61b24a94aec', NOW(), NOW(), true),
+    ('07c5f13f-ec48-4ff8-bc4d-6710fe95576f', '97edb311-549c-483e-83fd-6fed5ce54f0c', 'a9c14b9f-7b69-45ff-9db8-f61b24a94aec', 'Internship 2', 'Description 2', '456 Elm Avenue', NOW(), NOW(), 'a9c14b9f-7b69-45ff-9db8-f61b24a94aec', 'a9c14b9f-7b69-45ff-9db8-f61b24a94aec', NOW(), NOW(), true),
+    ('27c6ca6c-2fed-43e3-b039-e315e0cc62bf', '68f92eb1-2d60-4ebf-9eab-c8b7670d7fdc', '66dd48ab-afc1-4260-a7f2-527f0b5bd384', 'Internship 3', 'Description 3', '789 Oak Road', NOW(), NOW(), '66dd48ab-afc1-4260-a7f2-527f0b5bd384', '66dd48ab-afc1-4260-a7f2-527f0b5bd384', NOW(), NOW(), true),
+    ('6f109bfe-2c84-416b-92b7-0d4e8db08da5', '7501e58b-6ef1-45ed-9e48-b6e54b4c4f8d', '66dd48ab-afc1-4260-a7f2-527f0b5bd384', 'Internship 4', 'Description 4', '101 Pine Street', NOW(), NOW(), '66dd48ab-afc1-4260-a7f2-527f0b5bd384', '66dd48ab-afc1-4260-a7f2-527f0b5bd384', NOW(), NOW(), true),
+    ('839df3a5-fcb4-40f4-9355-5701a5d97360', 'a64f9a74-5792-4672-97eb-e388ced412cf', '0a206bed-d95f-49c6-82e5-e3ffa7f48ec0', 'Internship 5', 'Description 5', '222 Maple Avenue', NOW(), NOW(), '0a206bed-d95f-49c6-82e5-e3ffa7f48ec0', '0a206bed-d95f-49c6-82e5-e3ffa7f48ec0', NOW(), NOW(), true);
+
+INSERT INTO public."InternshipApplication" ("Id", "StateId", "StudentId", "InternshipId", "Message", "DateCreated", "DateUpdated", "CreatedByUserId", "UpdatedByUserId", "IsActive")
+VALUES
+    ('6364c7f9-e40a-44b5-b586-b3b03cc361e1', '80879fa0-c082-49ff-8722-f45f4017e834', '61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', '6f109bfe-2c84-416b-92b7-0d4e8db08da5', 'This is my application message.', NOW(), NOW(), '61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', '61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', true),
+    ('81741874-832e-4986-8ec9-bf5f0fa3dfde', '80879fa0-c082-49ff-8722-f45f4017e834', '61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', '07c5f13f-ec48-4ff8-bc4d-6710fe95576f', 'This is my application message.', NOW(), NOW(), '61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', '61afa574-c6ac-4fd2-9245-b32d3b2d9b2c', true),
+    ('7926e856-22d2-45a2-b458-bcfdaca761b1', '80879fa0-c082-49ff-8722-f45f4017e834', 'a0434668-e3b7-4326-b57b-9b50bd5cea1d', '07c5f13f-ec48-4ff8-bc4d-6710fe95576f', 'This is my application message.', NOW(), NOW(), 'a0434668-e3b7-4326-b57b-9b50bd5cea1d', 'a0434668-e3b7-4326-b57b-9b50bd5cea1d', true),
+    ('5b73bd2e-233d-4d4f-a187-efc2f5159c3a', '80879fa0-c082-49ff-8722-f45f4017e834', 'a0434668-e3b7-4326-b57b-9b50bd5cea1d', '1903ccfa-8e19-4d8a-be2c-c16925cd032c', 'This is my application message.', NOW(), NOW(), 'a0434668-e3b7-4326-b57b-9b50bd5cea1d', 'a0434668-e3b7-4326-b57b-9b50bd5cea1d', true),
+    ('df75d853-5f8b-4cd7-9150-9ec0cafdfc41', '80879fa0-c082-49ff-8722-f45f4017e834', '6699302f-1668-4387-99a9-2f92f9d3ed08', '839df3a5-fcb4-40f4-9355-5701a5d97360', 'This is my application message.', NOW(), NOW(), '6699302f-1668-4387-99a9-2f92f9d3ed08', '6699302f-1668-4387-99a9-2f92f9d3ed08', true);
+    

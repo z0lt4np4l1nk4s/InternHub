@@ -1,0 +1,18 @@
+*{
+    background-color: #F2F2F2;
+}
+.title {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F5F5F5; /* Dodajte boju pozadine prema vašim preferencijama */
+}
+.custom-button {
+    background-color: #A8BBBF;
+    border-color: #A8BBBF;
+    margin-top: 60px;
+  }
+  

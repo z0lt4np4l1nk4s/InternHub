@@ -1,0 +1,153 @@
+#internship-container {
+  position: relative; /* Add relative positioning to the container */
+  background-color: #a8bbbf;
+  height: 20vh;
+  width: 45vw;
+  margin: 10px 0px;
+  border-radius: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#outside-container {
+  display: grid;
+  place-items: center;
+}
+
+p,
+h3,
+h2,
+.p-button-flex,
+.p-flex,
+.card-body,
+.col-md-12,
+strong,
+a,
+.bg-c {
+  background-color: #a8bbbf;
+}
+h3 {
+  margin-left: 15px;
+  margin-bottom: 10 px;
+  font-weight: 400;
+}
+
+h4 {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+p {
+  color: black;
+  font-style: italic;
+}
+
+/* #description {
+  color: black;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#description::after {
+  content: "...";
+} */
+
+.p-button-flex {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 60px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.duration {
+  margin-left: 15px;
+}
+
+.p-flex {
+  position: absolute; /* Position the p-flex absolutely */
+  bottom: 0px; /* Adjust the bottom value as needed */
+  left: 15px; /* Adjust the left value as needed */
+  right: 30px; /* Adjust the right value as needed */
+  display: flex;
+  justify-content: space-between; /* Evenly distribute the items */
+  align-items: flex-end;
+}
+
+.p-flex p {
+  flex-grow: 1; /* First and second paragraphs will have equal flex grow */
+}
+
+.p-flex p:last-child {
+  flex-grow: 12; /* Third paragraph will have twice the flex grow of the first and second */
+  text-align: right;
+}
+
+/* button {
+  background-color: #486b73;
+  border-radius: 10px;
+  color: white;
+  margin-left: 40px;
+}
+button:hover {
+  background-color: #5c8892;
+  transform: scale(1.04);
+} */
+
+html,
+body {
+  background-color: #f2f2f2;
+}
+
+.card {
+  background-color: #a8bbbf;
+  font-size: 1.2em;
+}
+
+.container {
+  max-width: 1200px !important;
+  background-color: #f2f2f2 !important;
+  margin-top: 25px !important;
+}
+
+/* RegisterPopupInternship.css */
+
+.modal {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.popup-content {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 150px; /* Set a specific height for the popup content */
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a8bbbf;
+}
+
+.bg {
+  background-color: #a8bbbf;
+}
+
+.move-left-relative {
+  transform: translate(-30%, 0);
+}
